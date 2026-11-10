@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="1100" viewBox="0 0 1680 1100">
+<rect width="100%" height="100%" fill="#f4f7fb"/>
+<text x="40" y="48" fill="#203047" font-family="Arial, sans-serif" font-size="17" font-weight="bold">LAB 4 | TASK MANAGEMENT | SQLITE | 3NF</text>
+<polyline points="360,170 470,170" fill="none" stroke="#61738b" stroke-width="2"/>
+<text x="370" y="150" fill="#203047" font-family="Arial, sans-serif" font-size="17">1 : 0..N</text>
+<polyline points="200,276 200,510 470,510" fill="none" stroke="#61738b" stroke-width="2"/>
+<text x="220" y="490" fill="#203047" font-family="Arial, sans-serif" font-size="17">1 : 0..N</text>
+<polyline points="640,306 640,430" fill="none" stroke="#61738b" stroke-width="2"/>
+<text x="655" y="365" fill="#203047" font-family="Arial, sans-serif" font-size="17">0..1 : 0..N</text>
+<polyline points="1450,246 1450,490 1270,490" fill="none" stroke="#61738b" stroke-width="2"/>
+<text x="1460" y="355" fill="#203047" font-family="Arial, sans-serif" font-size="17">1 : 0..N</text>
+<polyline points="830,490 920,490" fill="none" stroke="#61738b" stroke-width="2"/>
+<text x="835" y="470" fill="#203047" font-family="Arial, sans-serif" font-size="17">1 : 0..N</text>
+<polyline points="650,786 650,910 920,910" fill="none" stroke="#61738b" stroke-width="2"/>
+<text x="675" y="890" fill="#203047" font-family="Arial, sans-serif" font-size="17">1 : 0..N</text>
+<polyline points="1310,930 1270,930" fill="none" stroke="#61738b" stroke-width="2"/>
+<text x="1285" y="820" fill="#203047" font-family="Arial, sans-serif" font-size="17">1 : 0..N</text>
+<rect x="40" y="100" width="320" height="176" rx="8" fill="white" stroke="#c6d1df"/><path d="M40,142h320" stroke="#c6d1df"/>
+<text x="55" y="129" fill="#203047" font-family="Arial, sans-serif" font-size="17" font-weight="bold">Users</text>
+<text x="55" y="170" fill="#203047" font-family="Arial, sans-serif" font-size="17">PK user_id : INTEGER</text>
+<text x="55" y="202" fill="#203047" font-family="Arial, sans-serif" font-size="17">UQ username : TEXT NOT NULL</text>
+<text x="55" y="234" fill="#203047" font-family="Arial, sans-serif" font-size="17">UQ email : TEXT NOT NULL</text>
+<text x="55" y="266" fill="#203047" font-family="Arial, sans-serif" font-size="17">created_at : TEXT NOT NULL</text>
+<rect x="470" y="100" width="330" height="208" rx="8" fill="white" stroke="#c6d1df"/><path d="M470,142h330" stroke="#c6d1df"/>
+<text x="485" y="129" fill="#203047" font-family="Arial, sans-serif" font-size="17" font-weight="bold">Projects</text>
+<text x="485" y="170" fill="#203047" font-family="Arial, sans-serif" font-size="17">PK project_id : INTEGER</text>
+<text x="485" y="202" fill="#203047" font-family="Arial, sans-serif" font-size="17">name : TEXT NOT NULL</text>
+<text x="485" y="234" fill="#203047" font-family="Arial, sans-serif" font-size="17">description : TEXT</text>
+<text x="485" y="266" fill="#203047" font-family="Arial, sans-serif" font-size="17">FK user_id : INTEGER NOT NULL</text>
+<text x="485" y="298" fill="#203047" font-family="Arial, sans-serif" font-size="17">created_at : TEXT NOT NULL</text>
+<rect x="470" y="430" width="360" height="368" rx="8" fill="white" stroke="#c6d1df"/><path d="M470,472h360" stroke="#c6d1df"/>
+<text x="485" y="459" fill="#203047" font-family="Arial, sans-serif" font-size="17" font-weight="bold">Tasks</text>
+<text x="485" y="500" fill="#203047" font-family="Arial, sans-serif" font-size="17">PK task_id : INTEGER</text>
+<text x="485" y="532" fill="#203047" font-family="Arial, sans-serif" font-size="17">title : TEXT NOT NULL</text>
+<text x="485" y="564" fill="#203047" font-family="Arial, sans-serif" font-size="17">description : TEXT</text>
+<text x="485" y="596" fill="#203047" font-family="Arial, sans-serif" font-size="17">due_date : TEXT (nullable)</text>
+<text x="485" y="628" fill="#203047" font-family="Arial, sans-serif" font-size="17">priority : TEXT NOT NULL</text>
+<text x="485" y="660" fill="#203047" font-family="Arial, sans-serif" font-size="17">status : TEXT NOT NULL</text>
+<text x="485" y="692" fill="#203047" font-family="Arial, sans-serif" font-size="17">created_at : TEXT NOT NULL</text>
+<text x="485" y="724" fill="#203047" font-family="Arial, sans-serif" font-size="17">updated_at : TEXT NOT NULL</text>
+<text x="485" y="756" fill="#203047" font-family="Arial, sans-serif" font-size="17">FK user_id : INTEGER NOT NULL</text>
+<text x="485" y="788" fill="#203047" font-family="Arial, sans-serif" font-size="17">FK project_id : INTEGER (nullable)</text>
+<rect x="1260" y="100" width="370" height="144" rx="8" fill="white" stroke="#c6d1df"/><path d="M1260,142h370" stroke="#c6d1df"/>
+<text x="1275" y="129" fill="#203047" font-family="Arial, sans-serif" font-size="17" font-weight="bold">Categories</text>
+<text x="1275" y="170" fill="#203047" font-family="Arial, sans-serif" font-size="17">PK category_id : INTEGER</text>
+<text x="1275" y="202" fill="#203047" font-family="Arial, sans-serif" font-size="17">UQ name : TEXT NOT NULL</text>
+<text x="1275" y="234" fill="#203047" font-family="Arial, sans-serif" font-size="17">description : TEXT</text>
+<rect x="920" y="430" width="350" height="112" rx="8" fill="white" stroke="#c6d1df"/><path d="M920,472h350" stroke="#c6d1df"/>
+<text x="935" y="459" fill="#203047" font-family="Arial, sans-serif" font-size="17" font-weight="bold">Task_Categories</text>
+<text x="935" y="500" fill="#203047" font-family="Arial, sans-serif" font-size="17">PK, FK task_id : INTEGER NOT NULL</text>
+<text x="935" y="532" fill="#203047" font-family="Arial, sans-serif" font-size="17">PK, FK category_id : INTEGER NOT NULL</text>
+<rect x="920" y="850" width="350" height="112" rx="8" fill="white" stroke="#c6d1df"/><path d="M920,892h350" stroke="#c6d1df"/>
+<text x="935" y="879" fill="#203047" font-family="Arial, sans-serif" font-size="17" font-weight="bold">Task_Labels</text>
+<text x="935" y="920" fill="#203047" font-family="Arial, sans-serif" font-size="17">PK, FK task_id : INTEGER NOT NULL</text>
+<text x="935" y="952" fill="#203047" font-family="Arial, sans-serif" font-size="17">PK, FK label_id : INTEGER NOT NULL</text>
+<rect x="1310" y="850" width="320" height="144" rx="8" fill="white" stroke="#c6d1df"/><path d="M1310,892h320" stroke="#c6d1df"/>
+<text x="1325" y="879" fill="#203047" font-family="Arial, sans-serif" font-size="17" font-weight="bold">Labels</text>
+<text x="1325" y="920" fill="#203047" font-family="Arial, sans-serif" font-size="17">PK label_id : INTEGER</text>
+<text x="1325" y="952" fill="#203047" font-family="Arial, sans-serif" font-size="17">UQ name : TEXT NOT NULL</text>
+<text x="1325" y="984" fill="#203047" font-family="Arial, sans-serif" font-size="17">color : TEXT NOT NULL</text>
+<text x="40" y="1030" fill="#203047" font-family="Arial, sans-serif" font-size="17">PK = primary key | FK = foreign key | UQ = unique | 0..N = zero or many</text>
+<text x="40" y="1065" fill="#203047" font-family="Arial, sans-serif" font-size="17">Composite PK: Task_Categories(task_id, category_id); Task_Labels(task_id, label_id)</text>
+</svg>
